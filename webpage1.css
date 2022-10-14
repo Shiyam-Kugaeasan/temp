@@ -339,7 +339,7 @@
 }
 
 .bpieces {
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     grid-area: bpieces;
     font-size: x-large;
     padding: 5%;

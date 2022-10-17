@@ -34,7 +34,7 @@
     font-family: 'Times New Roman', Times, serif;
     padding: 5%;
     grid-area: title;
-    border: solid black;
+    border: solid white;
 }
 
 .piece {

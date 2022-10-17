@@ -309,7 +309,7 @@
 
 .time {
     grid-area: time;
-    font-size: xx-large;
+    font-size: x-large;
     align-items: center;
     text-align: center;
     padding: 3%;

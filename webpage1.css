@@ -333,7 +333,7 @@
 .wpieces {
     background-color: white;
     grid-area: wpieces;
-    font-size: x-large;
+    font-size: large;
     padding: 5%;
     border: solid black;
 }

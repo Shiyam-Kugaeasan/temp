@@ -22,7 +22,7 @@
     ". . . . . . . . . . . . . . . .";
     width: 100%;
     aspect-ratio: 1/2;
-    background-color: rgb(104, 104, 104);
+    background-color:red;
     border: solid green;
 }
 

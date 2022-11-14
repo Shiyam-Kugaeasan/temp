@@ -1,0 +1,347 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(15, 2.5cm);
+    grid-template-rows: repeat(15, 2.5cm);
+    grid-template-areas: 
+    ". . . . . title title title title title title . . . . ."
+    ". . . . . . . . . . . . . . . ."
+    ". . . . brook bhorse bbishop bqueen bking bbishop1 bhorse1 brook1 . . . ."
+    ". bpieces bpieces . bpawn bpawn1 bpawn2 bpawn3 bpawn4 bpawn5 bpawn6 bpawn7 . start start ."
+    ". bpieces bpieces . box31 box30 box29 box28 box27 box26 box25 box24 . time time ."
+    ". . . . box16 box17 box18 box19 box20 box21 box22 box23 . . . ."
+    ". . . . box15 box14 box13 box12 box11 box10 box9 box8 . . . ."
+    ". wpieces wpieces . box0 box1 box2 box3 box4 box5 box6 box7 . . . ."
+    ". wpieces wpieces . wpawn wpawn1 wpawn2 wpawn3 wpawn4 wpawn5 wpawn6 wpawn7 . . . ."
+    ". . . . wrook whorse wbishop wqueen wking wbishop1 whorse2 wrook2 . . . ."
+    ". . . . . . . . . . . . . . . .";
+    width: 100%;
+    aspect-ratio: 1/2;
+    background-color: rgb(104, 104, 104);
+    border: solid black;
+}
+
+.title {
+    background-color: green;
+    color: azure;
+    text-align: center;
+    font-size: xx-large;
+    padding: 5%;
+    grid-area: title;
+    border: solid black;
+}
+
+.piece {
+    height: 2.5cm;
+    width: 2.5cm;
+    align-items: center;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: rgb(49, 49, 49);
+}
+
+.wrook {
+    grid-area: wrook;
+}
+
+.whorse {
+    grid-area: whorse;
+}
+
+.wbishop {
+    grid-area: wbishop;
+}
+
+.wqueen {
+    grid-area: wqueen;
+}
+
+.wking {
+    grid-area: wking;
+}
+
+.wbishop1 {
+    grid-area: wbishop1;
+}
+
+.whorse2 {
+    grid-area: whorse2;
+}
+
+.wrook2 {
+    grid-area: wrook2;
+}
+
+.wpawn {
+    grid-area: wpawn;
+}
+
+.wpawn1 {
+    grid-area: wpawn1;
+}
+
+.wpawn2 {
+    grid-area: wpawn2;
+}
+
+.wpawn3 {
+    grid-area: wpawn3;
+}
+
+.wpawn4 {
+    grid-area: wpawn4;
+}
+
+.wpawn5 {
+    grid-area: wpawn5;
+}
+
+.wpawn6 {
+    grid-area: wpawn6;
+}
+
+.wpawn7 {
+    grid-area: wpawn7;
+}
+
+.box0 {
+    grid-area: box0;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+.box11 {
+    grid-area: box11;
+}
+
+.box12 {
+    grid-area: box12;
+}
+
+.box13 {
+    grid-area: box13;
+}
+
+.box14 {
+    grid-area: box14;
+}
+
+.box15 {
+    grid-area: box15;
+}
+
+.box16 {
+    grid-area: box16;
+}
+
+.box17 {
+    grid-area: box17;
+}
+
+.box18 {
+    grid-area: box18;
+}
+
+.box19 {
+    grid-area: box19;
+}
+
+.box20 {
+    grid-area: box20;
+}
+
+.box21 {
+    grid-area: box21;
+}
+
+.box22 {
+    grid-area: box22;
+}
+
+.box23 {
+    grid-area: box23;
+}
+
+.box24 {
+    grid-area: box24;
+}
+
+.box25 {
+    grid-area: box25;
+}
+
+.box26 {
+    grid-area: box26;
+}
+
+.box27 {
+    grid-area: box27;
+}
+
+.box28 {
+    grid-area: box28;
+}
+
+.box29 {
+    grid-area: box29;
+}
+
+.box30 {
+    grid-area: box30;
+}
+
+.box31 {
+    grid-area: box31;
+}
+
+.bking {
+    grid-area: bking;
+}
+
+.brook {
+    grid-area: brook;
+}
+
+.bhorse {
+    grid-area: bhorse;
+}
+
+.bbishop {
+    grid-area: bbishop;
+}
+
+.bqueen {
+    grid-area: bqueen;
+}
+
+.bbishop1 {
+    grid-area: bbishop1;
+}
+
+.bhorse1 {
+    grid-area: bhorse1;
+}
+
+.brook1 {
+    grid-area: brook1;
+}
+
+.bpawn {
+    grid-area: bpawn;
+}
+
+.bpawn1 {
+    grid-area: bpawn1;
+}
+
+.bpawn2 {
+    grid-area: bpawn2;
+}
+
+.bpawn3 {
+    grid-area: bpawn3;
+}
+
+.bpawn4 {
+    grid-area: bpawn4;
+}
+
+.bpawn5 {
+    grid-area: bpawn5;
+}
+
+.bpawn6 {
+    grid-area: bpawn6;
+}
+
+.bpawn7 {
+    grid-area: bpawn7;
+}
+
+.time {
+    grid-area: time;
+    font-size: xx-large;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    border: solid black;
+}
+
+.start {
+    grid-area: start;
+    font-size: xx-large;
+    text-align: center;
+    padding: 10%;
+    border: solid black;
+    background-color: white;
+}
+
+.start:hover {
+    background-color: black;
+    color: white;
+}
+
+.wpieces {
+    background-color: white;
+    grid-area: wpieces;
+    font-size: x-large;
+    padding: 5%;
+    border: solid black;
+}
+
+.bpieces {
+    background-color: black;
+    grid-area: bpieces;
+    font-size: x-large;
+    padding: 5%;
+    border: solid black;
+    color: white;
+}

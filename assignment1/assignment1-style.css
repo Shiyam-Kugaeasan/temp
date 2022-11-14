@@ -1,0 +1,94 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+div.page {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-template-areas: 
+  ". . . title title title title . . ."
+  ". . . . . . . . . ."
+  ". . text text text text text text . ."
+  ". . . . . . . . . ."
+  ". text2 text2 text2 text2 text2 image1 image1 image1 ."
+  ". text2 text2 text2 text2 text2 image1 image1 image1 ."
+  ". . . . . . . . . ."
+  ". image2 image2 image2 text3 text3 text3 text3 text3 ."
+  ". image2 image2 image2 text3 text3 text3 text3 text3 ."
+  ". . . . . . . . . ."
+  ". text4 text4 text4 text4 text4 image3 image3 image3 ."
+  ". text4 text4 text4 text4 text4 image3 image3 image3 ."
+  ". . . . . . . . . topbutton";
+  width: 100%;
+  gap: 1%;
+  background-color: black;
+}
+  
+.title {
+  border: 5px solid black;
+  border-radius:50px;
+  text-align: center;
+  font: medium Courier, monospace;
+  color: gold;
+  background-color: purple;
+  padding: 25px;
+  grid-area: title;
+}
+  
+.title:hover {
+  color: red;
+  background-color: green;
+}
+  
+.name {
+  text-align: right;
+  font-size: smaller;
+  font: small Courier, monospace;
+}
+
+p.text {
+  font-size: x-large;
+  grid-area: text;
+  background-color: gray;
+}
+
+p.text2 {
+  grid-area: text2;
+  background-color: gray;
+}
+
+p.image1 {
+  grid-area: image1;
+  background-color: gray;
+}
+
+p.image2 {
+  grid-area: image2;
+  background-color: gray;
+}
+
+p.text3 {
+  grid-area: text3;
+  background-color: gray;
+}
+
+.text4 {
+  grid-area: text4;
+  background-color: gray;
+}
+
+.image3 {
+  grid-area: image3;
+  background-color: gray;
+}
+
+.topbutton {
+  grid-area: topbutton;
+  border: solid 5px black;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

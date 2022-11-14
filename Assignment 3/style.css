@@ -1,0 +1,121 @@
+*{margin: 0; padding: 0;}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent parent"
+    "img img img img img img img t t t t t t t t t t t t t"
+    "img img img img img img img overview overview overview overview overview overview overview overview overview overview overview overview overview"
+    "img img img img img img img p p p popularity popularity popularity popularity languages languages languages released released ."
+    "img img img img img img img budget budget budget revenue revenue revenue runtime runtime runtime . . . ."
+    "img img img img img img img iframe iframe iframe iframe iframe iframe iframe iframe . . . . ."
+    "tagline tagline tagline tagline tagline tagline tagline iframe iframe iframe iframe iframe iframe iframe iframe . . . . .";
+    background-color: black;
+    width: 100%;
+    aspect-ratio: 16/9;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.parent {
+    text-align: center;
+    flex-grow: 3;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    grid-area: parent;
+}
+
+.header {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* .label {
+
+} */
+
+.divider {
+    border: 3px solid red;
+    margin-top: 3%;
+}
+
+img {
+    margin-top: 10%;
+    margin-left: 10%;
+    grid-area: img;
+    height: 650px;
+    width: 450px;
+}
+
+t {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    grid-area: t;
+    margin-top: 1%;
+    padding: 5% 0%;
+}
+
+tagline {
+    grid-area: tagline;
+    margin-bottom: 30%;
+    margin-left: 10%;
+    font-size: 30px;
+    font-style: italic;
+}
+
+overview {
+    grid-area: overview;
+    font-size: 20px;
+}
+
+p {
+    grid-area: p;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+budget {
+    grid-area: budget;
+    font-size: 20px;
+}
+
+released {
+    grid-area: released;
+    font-size: 20px;
+    margin-top: 4%;
+}
+
+revenue {
+    grid-area: revenue;
+    font-size: 20px;
+}
+
+runtime {
+    grid-area: runtime;
+    font-size: 20px;
+}
+
+popularity {
+    grid-area: popularity;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+languages {
+    grid-area: languages;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+iframe {
+    grid-area: iframe;
+    height: 300px;
+    aspect-ratio: 16/9;
+}

@@ -5,25 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Site</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="./script.js" defer></script>
   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <label for="movies">List of Movies:</label>
-  <select name="movies" id="movies">
-    <option value=""></option>  
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-  </select>
-  <br><br>
-  <input type="submit" value="Get">
+  <div class="parent">
+    <h1 class="header">Movie Site</h1>
+    <label for="movies">List of Movies:</label>
+    <select name="movies" id="select">
+      <option value="default">--</option>  
+      <option value="spiderman">Spider-Man: No Way Home</option>
+      <option value="shang-chi">Shang Chi and the Legend of the Ten Rings</option>
+      <option value="into-the-spiderverse">Spider-Man: Into the Spider-Verse</option>
+      <option value="top-gun">Top Gun: Maverick</option>
+      <option value="el-camino">El Camino</option>
+      <option value="pokemon">Pokemon Detective Pikachu</option>
+      <option value="jurassic-park">Jurassic Park III</option>
+      <option value="jjk">Jujutsu Kaisen 0</option>
+      <option value="infinity-war">Avengers: Infinity War</option>
+      <option value="endgame">Avengers: Endgame</option>
+    </select>
+    <br><br>
+    <button onclick="myFunction()" id="get">Get</button>
+    <hr class="divider">
+  </div>
 </body>
 </html>
